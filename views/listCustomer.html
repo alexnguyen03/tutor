@@ -1,0 +1,48 @@
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3 class="panel-title">DANH SÁCH KHÁCH HÀNG</h3>
+    </div>
+    <div class="panel-body">
+        <a class="btn btn-success my-2" href="#!add" role="button">Thêm khách hàng mới</a>
+        <div class="row">
+            <div class="col-lg-6" ng-repeat="c in customers">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <b>
+                                {{c.name}}
+                            </b>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped table-hover">
+                            <tr>
+                                <th>
+                                    Họ và tên:
+                                </th>
+                                <td>
+                                    {{c.name}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Số điện thoại:</th>
+                                <td>
+                                    {{c.phone}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Địa chỉ:</th>
+                                <td>
+                                    {{c.address}}
+                                </td>
+                            </tr>
+                        </table>
+                        <a class="btn btn-info" href="#!add/{{c.id}}" ng-click="edit(c)" role="button">Sửa thông tin</a>
+                        <a class="btn btn-warning" href="" ng-click="delete(c.id)" role="button">Xóa khách hàng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

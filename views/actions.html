@@ -1,0 +1,39 @@
+<form action="#!list" role="form" name="infoForm">
+    <legend>Thông tin khách hàng</legend>
+    <div class="row">
+        <!-- <div class="col-lg-6"> -->
+        <div class="form-group">
+            <label for="">Họ tên</label>
+            <input type="text" class="form-control" required name="txtName" ng-model="customer.name" id=""
+                   placeholder="Input field">
+            <span class="text-danger" ng-show="infoForm.txtName.$dirty && infoForm.txtName.$invalid">
+                Vui lòng nhập Họ tên
+            </span>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-lg-6"> -->
+        <div class="form-group">
+            <label for="">Số điện thoại</label>
+            <input type="text" class="form-control" required name="txtPhone" ng-model="customer.phone" id=""
+                   placeholder="Input field">
+            <span class="text-danger" ng-show="infoForm.txtPhone.$dirty && infoForm.txtPhone.$invalid">
+                Vui lòng nhập SDT
+            </span>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-lg-6"> -->
+        <div class="form-group">
+            <label for="">Địa chỉ</label>
+            <input type="text" class="form-control" required name="txtAddress" ng-model="customer.address" id=""
+                   placeholder="Input field">
+            <span class="text-danger" ng-show="infoForm.txtAddress.$dirty && infoForm.txtAddress.$invalid">
+                Vui lòng nhập Họ tên
+            </span>
+        </div>
+        <!-- </div> -->
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="save(customer)" ng-disabled="infoForm.txtName.$invalid ||
+    infoForm.txtPhone.$invalid || infoForm.txtAddress.$invalid
+    ">Lưu
+        lại thôi !</button>
+</form>

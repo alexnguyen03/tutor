@@ -1,0 +1,34 @@
+{
+	"customers": [
+		{
+			"id": 1,
+			"name": "Hoai Du",
+			"phone": "0326265147",
+			"address": "Vĩnh Long"
+		},
+		{
+			"id": 2,
+			"name": "Hoai Tuan 93",
+			"phone": "0326265147",
+			"address": "Vĩnh Long"
+		},
+		{
+			"id": 3,
+			"name": "Hoai Dung",
+			"phone": "0326265147",
+			"address": "Vĩnh Long"
+		},
+		{
+			"id": 4,
+			"name": "Hoai Dung",
+			"phone": "0326265147",
+			"address": "Vĩnh Long"
+		},
+		{
+			"id": 5,
+			"name": "Hoai Dung xoa",
+			"phone": "0326265147",
+			"address": "Vĩnh Long"
+		}
+	]
+}
